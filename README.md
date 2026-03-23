@@ -7,7 +7,7 @@ Status: Complete
 Platform: Microsoft Azure 
 Duration: 2025 – 2026 
 Location: Dallas–Fort Worth, TX 
- What I Built 
+What I Built 
 1. Virtual Machine Deployment & Remote Access 
 Provisioned Windows Server 2022 VMs in Azure with correct sizing, region selection, and authentication configuration 
 Established secure Remote Desktop Protocol (RDP) access 
@@ -126,38 +126,6 @@ Time to resolve: ~15 minutes
 Challenge 4 — Alert Not Firing 
 Problem: CPU alert rule was configured but no email was received during testing. Root Cause: Action group was created but not linked to the alert rule correctly. Fix: Edited the alert rule, re-attached the action group, stress tested CPU again, alert fired within 5 minutes. 
 Time to resolve: ~30 minutes 
-Screenshots 
-Screenshots demonstrating each completed component are in the /screenshots folder.
-File 
-What It Shows
-01-vm-deployed.png 
-Both VMs running in Azure Portal
-02-ad-ds-installed.png 
-Active Directory Domain Services installed on DC
-03-domain-joined.png 
-Second VM successfully joined to domain
-04-gpresult.png 
-GPOs applied and verified via gpresult /r
-05-nsg-rules.png 
-NSG inbound rules configured with least-privilege
-06-bastion-session.png 
-Browser-based RDP session via Azure Bastion
-07-jit-configured.png 
-JIT access configured with time and IP restrictions
-08-monitor-alert.png 
-CPU alert rule created in Azure Monitor
-
-
-
-
-
-
-
-09-alert-email.png 
-Alert email received confirming end-to-end pipeline
-10-budget-alert.png 
-Budget thresholds set in Azure Cost Management
-
 
 What I Learned 
 DNS is everything in Active Directory. Most domain join failures trace back to DNS misconfiguration. Always point NICs to the DC private IP before attempting a join. 
@@ -167,8 +135,8 @@ Alerting is only as good as your action group. The monitoring rule and the notif
 Documentation while building beats documentation after. Trying to reconstruct what you did from memory is painful. Notes taken in the moment are far more accurate and useful. 
 What’s Next 
 Expanding lab with AWS — working toward cloud-agnostic infrastructure skills Adding PowerShell scripts to automate AD user creation and GPO reporting Setting up Ubuntu Server VM to build Linux CLI proficiency 
-Pursuing AZ-900 certification (in progress) 
-Pursuing AZ-104 certification (planned) 
+AZ-900 certified
+AZ-104 certified 
 Portfolio 
 A full one-page portfolio document summarising this project is available in this repository: Azure_Cloud_Portfolio.pdf
 About Me 
